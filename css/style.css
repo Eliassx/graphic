@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    color: black;
+    background-color: hsl(27, 66%, 92%);
+    font-size: 1.8rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: 400px 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #fff;
+    padding: 3rem;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 12px;
+}
+
+.balance{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.7rem;
+
+    font-size: 15px;
+}
+
+.balanceValue{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.mb img{
+    width: 60px;
+    height: 60px;
+}
+
+.graphic{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: hsl(33, 100%, 98%);
+    border-radius: 12px;
+}
+
+.content{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid hsl(27, 66%, 92%);
+}
+
+.monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+
+    width: 200px;
+    cursor: pointer;
+}
+
+.monday:hover .amount, .tuesday:hover .amount, .wednesday:hover .amount, .thursday:hover .amount, .friday:hover .amount, .saturday:hover .amount, .sunday:hover .amount{
+    display: flex;
+}
+
+.monday-result{
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 3px;
+    height: 50px;
+    width: 40px;
+}
+
+.tuesday-result{
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 3px;
+    height: 90px;
+    width: 40px;
+}
+
+.wednesday-result{
+    background-color: hsl(186, 34%, 60%);
+    border-radius: 3px;
+    height: 130px;
+    width: 40px;
+}
+
+.thursday-result{
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 3px;
+    height: 85px;
+    width: 40px;
+}
+
+.friday-result{
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 3px;
+    height: 65px;
+    width: 40px;
+}
+
+.saturday-result{
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 3px;
+    height: 110px;
+    width: 40px;
+}
+
+.sunday-result{
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 3px;
+    height: 69px;
+    width: 40px;
+}
+
+.amount{
+    font-size: 14px;
+    padding: .4rem;
+    color: #fff;
+    background-color: hsl(25, 47%, 15%);
+    border-radius: 3px;
+
+    display: none;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.totalValue{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    color: hsl(28, 10%, 53%);
+}
+
+.totalValue span{
+    color: hsl(25, 47%, 15%);
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.porcent{
+    text-align: end;
+    color: hsl(28, 10%, 53%);
+}
+
+.porcent span{
+    font-weight: 700;
+    color: hsl(25, 47%, 15%);
+}
+
+@media (max-width: 375px) {
+    .container{
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: 400px 150px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .graphic h2{
+        font-size: 26px;
+    }
+
+    .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .sunday{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .8rem;
+    }
+
+    .monday-result{
+        background-color: hsl(10, 79%, 65%);
+        border-radius: 3px;
+        height: 50px;
+        width: 35px;
+    }
+    
+    .tuesday-result{
+        background-color: hsl(10, 79%, 65%);
+        border-radius: 3px;
+        height: 90px;
+        width: 35px;
+    }
+    
+    .wednesday-result{
+        background-color: hsl(186, 34%, 60%);
+        border-radius: 3px;
+        height: 130px;
+        width: 35px;
+    }
+    
+    .thursday-result{
+        background-color: hsl(10, 79%, 65%);
+        border-radius: 3px;
+        height: 85px;
+        width: 35px;
+    }
+    
+    .friday-result{
+        background-color: hsl(10, 79%, 65%);
+        border-radius: 3px;
+        height: 65px;
+        width: 35px;
+    }
+    
+    .saturday-result{
+        background-color: hsl(10, 79%, 65%);
+        border-radius: 3px;
+        height: 110px;
+        width: 35px;
+    }
+    
+    .sunday-result{
+        background-color: hsl(10, 79%, 65%);
+        border-radius: 3px;
+        height: 69px;
+        width: 35px;
+    }
+
+    .amount{
+        font-size: 12px;
+        padding: .2rem;
+        color: #fff;
+        background-color: hsl(25, 47%, 15%);
+        border-radius: 3px;
+    
+        display: none;
+    }
+
+    .totalValue{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        color: hsl(28, 10%, 53%);
+        font-size: 17px;
+    }
+
+    .totalValue span{
+        color: hsl(25, 47%, 15%);
+        font-weight: 700;
+        font-size: 32px;
+    }
+
+    .porcent{
+        text-align: end;
+        color: hsl(28, 10%, 53%);
+        font-size: 17px;
+    }
+    
+    .porcent span{
+        font-weight: 700;
+        color: hsl(25, 47%, 15%);   
+    }
+};
